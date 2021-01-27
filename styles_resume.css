@@ -1,0 +1,486 @@
+body{
+	margin: 0;
+	background-image: url(white-bg.jpg); 
+	font-family: georgia;
+}
+
+.header{
+	background-color: black;
+	padding-top: 8px;
+	padding-bottom: 30px;
+	box-shadow: 0px 5px 5px grey;
+	
+}
+.header a{
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 0px 16px;
+	padding-top: 0px;
+	font-size: 20px;
+
+}
+.header h1,h3{
+	color: white;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+h1{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+h2,p,b{
+	margin-left: 25px;
+}
+.details{
+	margin-left: 370px; 
+	width: 700px;
+    height: 470px;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    animation-name: pagetransition;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+.expe{
+	margin-left: 50px; 
+	width: 700px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 17px;
+    position: relative;
+    animation-name: pagetransition;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+.education{
+    position: relative;
+    animation-name: pagetransition;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+@keyframes pagetransition{
+	0%   {left:0px; top:0px;}
+	100% {left:50px; top:0px;}
+}
+.contents{
+	margin-left: 25px;
+	position: relative;
+    animation-name: pagetransition;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+.profile{
+	margin: 15px;
+	margin-top: 30px;
+}
+.grid-container{
+	display: grid;
+  	grid-gap: 5px;
+}
+.grid-item {
+  	text-align: left;
+}
+.img{
+	grid-column: 1 / span 3;
+  	grid-row: 1;
+}
+.info{
+	grid-column: 2 / span 3;
+  	grid-row: 1;
+}
+.arrowhead{
+	grid-column: 3 / span 3;
+  	grid-row: 1;
+}
+.skills-grid-container{
+	display: grid;
+  	grid-gap: 5px;
+}
+.programming{
+	grid-column: 1 / span 2;
+  	grid-row: 1;
+}
+.social{
+	grid-column: 2 / span 2;
+  	grid-row: 1;
+}
+.button{
+  background-color: none;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+}
+.button:hover{
+	margin: 0px 15px 0px 15px; 
+	color: black;
+	background-color: white;
+	transition: 0.5s;
+}
+.wrapper{
+	border: 1px black;
+	border-radius: 3px;
+}
+#entry {
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+  margin: 25px;
+}
+
+#entry td, #entry th {
+  border: 2px #ddd;
+  padding: 15px;
+}
+
+#entry tr:nth-child(even){background-color: #f2f2f2;}
+
+#entry tr:hover {background-color: #ddd;}
+
+#entry th {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+    background-color: grey;
+    width: 21px;
+    padding: 16px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.arrow{
+	float: right;
+	margin-left: 130px;
+	margin-top: 110px;
+	opacity: 0.1;
+	position: relative;
+    animation-name: arrowtransition;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+@keyframes arrowtransition{
+	0%   {opacity:0.1;}
+	100% {opacity:0;}
+}
+.arrow:hover{
+	opacity: 0.3;
+	transition: 0.8s;
+}
+.javabox{
+	width: 65px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: jabar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes jabar{
+	0%   {width: 0px;}
+	100% {width: 65px;}
+}
+.javaborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+	opacity: 0.7;
+}
+.CSSbox{
+	width: 69px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: csbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes csbar{
+	0%   {width: 0px;}
+	100% {width: 69px;}
+}
+.CSSborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.HTMLbox{
+	width: 67px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: htbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes htbar{
+	0%   {width: 0px;}
+	100% {width: 67px;}
+}
+.HTMLborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.Pythonbox{
+	width: 45px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: pybar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes pybar{
+	0%   {width: 0px;}
+	100% {width: 45px;}
+}
+.Pythonborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.PHPbox{
+	width: 50px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: phbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes phbar{
+	0%   {width: 0px;}
+	100% {width: 50px;}
+}
+.PHPborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.javascriptbox{
+	width: 35px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: jsbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes jsbar{
+	0%   {width: 0px;}
+	100% {width: 35px;}
+}
+.javascriptborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.combox{
+	width: 50px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: cobar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes cobar{
+	0%   {width: 0px;}
+	100% {width: 50px;}
+}
+.comborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.adaptbox{
+	width: 70px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: adbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes adbar{
+	0%   {width: 0px;}
+	100% {width: 70px;}
+}
+.adaptborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.teambox{
+	width: 45px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: tebar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes tebar{
+	0%   {width: 0px;}
+	100% {width: 45px;}
+}
+.teamborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.timebox{
+	width: 65px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: tibar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes tibar{
+	0%   {width: 0px;}
+	100% {width: 65px;}
+}
+.timeborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.engbox{
+	width: 48px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: enbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes enbar{
+	0%   {width: 0px;}
+	100% {width: 48px;}
+}
+.engborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+.createbox{
+	width: 75px;
+	height: 14px;
+	background-color: royalblue;
+	border-radius: 6px;
+	margin-left: 30px;
+	position: absolute;
+	animation-name: crbar;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+@keyframes crbar{
+	0%   {width: 0px;}
+	100% {width: 75px;}
+}
+.createborder{
+	width: 100px;
+	height: 14px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+}
+
+
